@@ -1,0 +1,3 @@
+# Oath (or Affirmation) of Secrecy
+I, .......................... [swear by Almighty God]/[solemnly and sincerely declare and affirm] that I will not on any account, at any time whatsoever, disclose any counsel, advice, opinion or vote given by any Minister as [a member of the Cabinet]/[name of post/office] and that I will not, except with the authority of [the Minister]/[the Cabinet] and to such extent as may be required for the proper conduct of the Government of Antigua and Barbuda, directly or indirectly reveal the business or proceedings of [the Cabinet]/[my office] or any matter to my knowledge as [a member of Cabinet]/[post/office].
+So help me God (To be omitted in affirmation).
