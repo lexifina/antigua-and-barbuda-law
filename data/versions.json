@@ -1,0 +1,75 @@
+{
+ "country": "AG",
+ "acts": [
+  {
+   "slug": "constitution-schedule-3",
+   "short": "Const. Sch. 3",
+   "title": "Constitution of Antigua and Barbuda, Schedule 3 (Oaths and Affirmations)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2026/02/No.-22-of-2025-Constitution-of-Antigua-and-Barbuda-Amendment-Act-2025.pdf",
+   "versions": [
+    {
+     "from": "2026-01-01",
+     "units": 3,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2026/02/No.-22-of-2025-Constitution-of-Antigua-and-Barbuda-Amendment-Act-2025.pdf",
+     "sha256": "f41be893052501c8580a55fae2400704015c8f2af575bcf2761fda4a0c5b295c"
+    }
+   ]
+  },
+  {
+   "slug": "offences-against-the-person",
+   "short": "Offences against the Person Act",
+   "title": "Offences against the Person Act (Cap. 300)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2018/08/cap-300.pdf",
+   "versions": [
+    {
+     "from": "1992-01-01",
+     "units": 73,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2018/08/cap-300.pdf",
+     "sha256": "fe3361b0a89a4157540c805d47d08973128d31043d9f224acb2bbcadc5de0e40"
+    }
+   ]
+  },
+  {
+   "slug": "companies-act",
+   "short": "Companies Act",
+   "title": "Companies Act, 1995 (No. 18 of 1995)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2018/08/a1995-18.pdf",
+   "versions": [
+    {
+     "from": "1996-03-28",
+     "units": 541,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2018/08/a1995-18.pdf",
+     "sha256": "bb2e9c8209b6cb451543e75651ccc5dd8b44ff7fb4b76a4860e845852899e64d"
+    }
+   ]
+  },
+  {
+   "slug": "evidence-special-provisions-act",
+   "short": "Evidence (Special Provisions) Act",
+   "title": "The Evidence (Special Provisions) Act, 2009 (No. 5 of 2009)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2019/02/a2009-5.pdf",
+   "versions": [
+    {
+     "from": "2009-02-19",
+     "units": 64,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2019/02/a2009-5.pdf",
+     "sha256": "57bb0c6202cf79888551247c8f2e8accbdb74ebbf58e508381ae5d430a900d32"
+    }
+   ]
+  },
+  {
+   "slug": "electronic-evidence-act",
+   "short": "Electronic Evidence Act",
+   "title": "The Electronic Evidence Act, 2013 (No. 11 of 2013)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2019/02/a2013-11.pdf",
+   "versions": [
+    {
+     "from": "2013-11-07",
+     "units": 20,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2019/02/a2013-11.pdf",
+     "sha256": "65a742eb5ca156a5e5975e35f1ccf7cb8e21d50a3cebb7a3c5bfbcdb961540c3"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+The legal text is from the Laws of Antigua and Barbuda site (https://laws.gov.ag), the official publication of the
+Government of Antigua and Barbuda: the Constitution of Antigua and Barbuda (Amendment) Act, 2025 (No. 22 of 2025),
+printed at the Government Printing Office, and its (Date of Commencement) Order, 2026 (SI 2026 No. 1), retrieved
+29 October 2026. The site states no licence. The Offences against the Person Act (Cap. 300) is the site's scanned PDF (https://laws.gov.ag/wp-content/uploads/2018/08/cap-300.pdf), retrieved 30 October 2026; its text here is Lexifina's Tesseract OCR of the page images, not the site's text layer, and contains recognition errors. The Companies Act, 1995 (No. 18 of 1995) is likewise Lexifina's Tesseract OCR of the site's scan (https://laws.gov.ag/wp-content/uploads/2018/08/a1995-18.pdf), retrieved 30 October 2026.
+
+Changes made by Lexifina: the text of Schedule 3 was converted to one Markdown file per oath, line breaks within a
+paragraph were joined, and the letter I misread as the digit 1 by the PDF text layer was corrected. The wording of the
+law was not changed. The Government of Antigua and Barbuda does not endorse this repository.
+
+Lexifina's own contributions (the arrangement of the history, the commit messages and the tools) are dedicated to the
+public domain under CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
