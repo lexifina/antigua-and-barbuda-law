@@ -1,0 +1,29 @@
+{
+ "parts": {
+  "30-evidence-special-provisions-act-2009.json": {
+   "acts": [
+    "evidence-special-provisions-act"
+   ],
+   "sha256": "57e0a7d67fd25c33b898e2611818e0868c0b04259ad04607462dd5e3c36fa3f9"
+  },
+  "31-electronic-evidence-act-2013.json": {
+   "acts": [
+    "electronic-evidence-act"
+   ],
+   "sha256": "29799c4bdbb4bada64be73ebae684918f4e5661bbafdc0eb71a9c491278ba189"
+  },
+  "32-festivals-commission-act-2026.json": {
+   "acts": [
+    "antigua-and-barbuda-festivals-commission-act-2026"
+   ],
+   "sha256": "a1bee073a83cc827adac5bfa889d5dda26c8cf5a305af3ecaa33dd7110b279b1"
+  },
+  "33-national-oversight-committee-act-2025.json": {
+   "acts": [
+    "national-oversight-committee-on-financial-action-act-2025"
+   ],
+   "sha256": "7610b3f3285efd4eae00ce88d9bfa69317e5b26bf6bab2249870f5979e00db30"
+  }
+ },
+ "schema": 1
+}
