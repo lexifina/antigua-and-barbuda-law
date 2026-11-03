@@ -11,6 +11,8 @@ This file is written by the build on 2026-11-03, the day the source data was ret
 | Laws of Antigua and Barbuda: Companies Act, 1995 (No. 18 of 1995) | <https://laws.gov.ag/wp-content/uploads/2018/08/a1995-18.pdf> | 2026-10-30 | No licence stated on the site |
 | Laws of Antigua and Barbuda: The Evidence (Special Provisions) Act, 2009 (No. 5 of 2009) | <https://laws.gov.ag/wp-content/uploads/2019/02/a2009-5.pdf> | 2026-10-30 | No licence stated on the site |
 | Laws of Antigua and Barbuda: The Electronic Evidence Act, 2013 (No. 11 of 2013) | <https://laws.gov.ag/wp-content/uploads/2019/02/a2013-11.pdf> | 2026-10-30 | No licence stated on the site |
+| Laws of Antigua and Barbuda: Antigua and Barbuda Festivals Commission Act, 2026 | <https://laws.gov.ag/wp-content/uploads/2026/07/No.-2-of-2026-Antigua-and-Barbuda-Festivals-Commission-Acr-2026.pdf> | 2026-11-03 | No licence stated on the site |
+| Laws of Antigua and Barbuda: National Oversight Committee on Financial Action Act, 2025 | <https://laws.gov.ag/wp-content/uploads/2026/01/No.-17-of-2025-National-Oversight-Committee-on-Financial-Action-Act-2025.pdf> | 2026-11-03 | No licence stated on the site |
 
 Every word of law in this repository comes from these sources. Lexifina reads them and records each act's dated versions, and the laws that made each change, in one corpus file. This repository is built from that file.
 
@@ -23,12 +25,14 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `companies-act` | Companies Act, 1995 (No. 18 of 1995) | 1 | 1996-03-28 to 1996-03-28 |
 | `evidence-special-provisions-act` | The Evidence (Special Provisions) Act, 2009 (No. 5 of 2009) | 1 | 2009-02-19 to 2009-02-19 |
 | `electronic-evidence-act` | The Electronic Evidence Act, 2013 (No. 11 of 2013) | 1 | 2013-11-07 to 2013-11-07 |
+| `antigua-and-barbuda-festivals-commission-act-2026` | Antigua and Barbuda Festivals Commission Act, 2026 (No. 2 of 2026) | 1 | 2026-04-16 to 2026-04-16 |
+| `national-oversight-committee-on-financial-action-act-2025` | National Oversight Committee on Financial Action Act, 2025 (No. 17 of 2025) | 1 | 2025-10-30 to 2025-10-30 |
 
-The build made 5 commits:
+The build made 7 commits:
 
 | Commits | Kind |
 | ---: | --- |
-| 5 | first version of an act |
+| 7 | first version of an act |
 | 0 | one law on its in-force day |
 | 0 | changes no amendment note explains, credited to the publisher |
 
@@ -36,7 +40,7 @@ Other counts:
 - 0 commits on the branch `future`: laws not yet in force on 2026-11-03.
 - 0 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
 - 2 laws in the record.
-- 7 tags.
+- 9 tags.
 
 ## Dates
 
@@ -48,15 +52,15 @@ When a law gives no date of its own, the default rule applies: An Antigua and Ba
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `b5fd4404b504bb47bf1cd421b558e80407607cb15003403b8ec6059e47d8d15f` (721502 bytes).
+- Corpus: sha256 `c41b6e48b833537b1a5386a970eaa2b4bc907f072ee8ea3bb0230182fd06353b` (787660 bytes).
 - Builder blob hashes (`git hash-object`): `build.py` `5d0eabdf207e7a114e8dbc8112ed3b044537b711`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
 - Python 3.14.4; git version 2.53.0.
 
 ## Checks
 
-5 versions of 5 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
+Not yet run for this build.
 
-No second build of this corpus has been compared yet.
+A second build from the same corpus into an empty folder gave identical hashes for all 7 history commits and 9 tags (history tip `6220a633ddc8a80aac0c72dc669bf50cb3495444`).
 
 ## Decisions made by hand
 
@@ -69,6 +73,12 @@ No second build of this corpus has been compared yet.
 - evidence-special-provisions-act: Oldest version available: the Act as enacted (assented 6 February 2009) and printed in the Official Gazette of 19 February 2009. Section 1(2) leaves commencement to a Notice of the Minister for Legal Affairs, which the source does not give, so the version is dated by the Gazette. The Evidence (Special Provisions) (Amendment) Acts of 2016 (No. 9 and No. 18) and 2017 (No. 15) are not applied.
 - electronic-evidence-act: text from the born-digital PDF text layer; page headers, part headings and the arrangement of sections are left out; words broken across a line with a hyphen are joined (the hyphen kept only where the hyphenated form occurs elsewhere in the Act and the joined form does not).
 - electronic-evidence-act: the Act has no commencement clause, so it is dated from its publication in the Official Gazette (2013-11-07), the default rule.
+- The Antigua and Barbuda Festivals Commission Act, 2026 is a single-file act: all 50 sections and the schedule are in one unit because the complete text is preserved without an unverified section split.
+- The version is dated 2026-04-16, the date printed on the Act as its Official Gazette publication date; the Act gives no separate commencement date.
+- The unit is extracted from the official PDF text layer beginning at ENACTED and ending before the parliamentary signatures; repeated running page headers and blank lines are excluded.
+- The National Oversight Committee on Financial Action Act, 2025 is a single-file act containing all 15 sections.
+- The version is dated 2025-10-30, the date printed on the Act as its Official Gazette publication date; the Act gives no separate commencement date.
+- The unit is extracted from the official PDF text layer beginning at ENACTED and ending before the parliamentary signatures; repeated running page headers and blank lines are excluded.
 
 ## What AI did and did not do
 
@@ -82,3 +92,5 @@ Model use at data-build time:
 - Claude Code wrote the scripts and chose the sources; it did not write or alter any legal text. The OCR statutes are the unedited output of Tesseract 5.4, which is not a language model.
 - none
 - none
+- A model selected the Act and reviewed dates and scope; no model wrote legal text.
+- A model selected the Act and reviewed dates and scope; no model wrote legal text.

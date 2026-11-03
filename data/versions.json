@@ -70,6 +70,34 @@
      "sha256": "65a742eb5ca156a5e5975e35f1ccf7cb8e21d50a3cebb7a3c5bfbcdb961540c3"
     }
    ]
+  },
+  {
+   "slug": "antigua-and-barbuda-festivals-commission-act-2026",
+   "short": "Festivals Commission Act, 2026",
+   "title": "Antigua and Barbuda Festivals Commission Act, 2026 (No. 2 of 2026)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2026/07/No.-2-of-2026-Antigua-and-Barbuda-Festivals-Commission-Acr-2026.pdf",
+   "versions": [
+    {
+     "from": "2026-04-16",
+     "units": 1,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2026/07/No.-2-of-2026-Antigua-and-Barbuda-Festivals-Commission-Acr-2026.pdf",
+     "sha256": "9e1e22a66eb2815eb78b75515ac2f8f798e8b2b1b637aed3e7223e8a3480c5f8"
+    }
+   ]
+  },
+  {
+   "slug": "national-oversight-committee-on-financial-action-act-2025",
+   "short": "National Oversight Committee on Financial Action Act, 2025",
+   "title": "National Oversight Committee on Financial Action Act, 2025 (No. 17 of 2025)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2026/01/No.-17-of-2025-National-Oversight-Committee-on-Financial-Action-Act-2025.pdf",
+   "versions": [
+    {
+     "from": "2025-10-30",
+     "units": 1,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2026/01/No.-17-of-2025-National-Oversight-Committee-on-Financial-Action-Act-2025.pdf",
+     "sha256": "be5adf9a8352ae556e30e414be744a0fa656ac22093cfc7b81670b0d8b18f22a"
+    }
+   ]
   }
  ]
 }
