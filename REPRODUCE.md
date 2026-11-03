@@ -56,7 +56,7 @@ When a law gives no date of its own, the default rule applies: An Antigua and Ba
 
 5 versions of 5 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
 
-A second build from the same corpus into an empty folder gave identical hashes for all 5 history commits and 7 tags (history tip `a09b01cb1083db623b921542db5d8ae08bff61ee`).
+No second build of this corpus has been compared yet.
 
 ## Decisions made by hand
 
