@@ -13,6 +13,8 @@ This file is written by the build on 2026-11-03, the day the source data was ret
 | Laws of Antigua and Barbuda: The Electronic Evidence Act, 2013 (No. 11 of 2013) | <https://laws.gov.ag/wp-content/uploads/2019/02/a2013-11.pdf> | 2026-10-30 | No licence stated on the site |
 | Laws of Antigua and Barbuda: Antigua and Barbuda Festivals Commission Act, 2026 | <https://laws.gov.ag/wp-content/uploads/2026/07/No.-2-of-2026-Antigua-and-Barbuda-Festivals-Commission-Acr-2026.pdf> | 2026-11-03 | No licence stated on the site |
 | Laws of Antigua and Barbuda: National Oversight Committee on Financial Action Act, 2025 | <https://laws.gov.ag/wp-content/uploads/2026/01/No.-17-of-2025-National-Oversight-Committee-on-Financial-Action-Act-2025.pdf> | 2026-11-03 | No licence stated on the site |
+| Laws of Antigua and Barbuda: The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026) | <https://laws.gov.ag/wp-content/uploads/2026/10/No.-8-of-2026-The-Airport-Administration-Charge-Amendment-Act-2026.pdf> | 2026-11-03 | No licence stated on the site |
+| Laws of Antigua and Barbuda: Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026) | <https://laws.gov.ag/wp-content/uploads/2026/07/No.-1-of-2026-Special-Economic-Zone-2026.pdf> | 2026-11-03 | No licence stated on the site |
 
 Every word of law in this repository comes from these sources. Lexifina reads them and records each act's dated versions, and the laws that made each change, in one corpus file. This repository is built from that file.
 
@@ -27,12 +29,14 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `electronic-evidence-act` | The Electronic Evidence Act, 2013 (No. 11 of 2013) | 1 | 2013-11-07 to 2013-11-07 |
 | `antigua-and-barbuda-festivals-commission-act-2026` | Antigua and Barbuda Festivals Commission Act, 2026 (No. 2 of 2026) | 1 | 2026-04-16 to 2026-04-16 |
 | `national-oversight-committee-on-financial-action-act-2025` | National Oversight Committee on Financial Action Act, 2025 (No. 17 of 2025) | 1 | 2025-10-30 to 2025-10-30 |
+| `airport-administration-charge-amendment-act-2026` | The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026) | 1 | 2026-09-01 to 2026-09-01 |
+| `special-economic-zone-amendment-act-2026` | Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026) | 1 | 2026-04-16 to 2026-04-16 |
 
-The build made 7 commits:
+The build made 9 commits:
 
 | Commits | Kind |
 | ---: | --- |
-| 7 | first version of an act |
+| 9 | first version of an act |
 | 0 | one law on its in-force day |
 | 0 | changes no amendment note explains, credited to the publisher |
 
@@ -40,7 +44,7 @@ Other counts:
 - 0 commits on the branch `future`: laws not yet in force on 2026-11-03.
 - 0 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
 - 2 laws in the record.
-- 9 tags.
+- 11 tags.
 
 ## Dates
 
@@ -52,7 +56,7 @@ When a law gives no date of its own, the default rule applies: An Antigua and Ba
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `c41b6e48b833537b1a5386a970eaa2b4bc907f072ee8ea3bb0230182fd06353b` (787660 bytes).
+- Corpus: sha256 `8155ee084df95aaa9f46463e5fb8e07894a5687b2c1732a2ab459283b5b2728e` (817757 bytes).
 - Builder blob hashes (`git hash-object`): `build.py` `35388bee5aa05369f7da68f5a8fa015ea8d442b8`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
 - Python 3.14.4; git version 2.53.0.
 
@@ -79,6 +83,14 @@ No second build of this corpus has been compared yet.
 - The National Oversight Committee on Financial Action Act, 2025 is a single-file act containing all 15 sections.
 - The version is dated 2025-10-30, the date printed on the Act as its Official Gazette publication date; the Act gives no separate commencement date.
 - The unit is extracted from the official PDF text layer beginning at ENACTED and ending before the parliamentary signatures; repeated running page headers and blank lines are excluded.
+- The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026) is a single-file act containing all 5 sections; the complete enacted body is preserved without an unverified provision split.
+- The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026) is dated 2026-09-01. Section 1(2) expressly brings the Act into effect on 1 September 2026.
+- The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026) is extracted from the official PDF text layer beginning at the statutory long title (AN ACT) and ending before the parliamentary signatures; repeated running page headers and blank lines are excluded.
+- Images for The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026): source 2, referenced 0, in-place omission notices 2; both omissions are decorative coats of arms (cover and assent page), not normative law text, and the official site states no licence for reproducing the graphical emblems.
+- Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026) is a single-file act containing all 13 sections; the complete enacted body is preserved without an unverified provision split.
+- Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026) is dated 2026-04-16. The Act gives no separate commencement day, so the Gazette publication date is used under the recorded default rule.
+- Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026) is extracted from the official PDF text layer beginning at the statutory long title (AN ACT) and ending before the parliamentary signatures; repeated running page headers and blank lines are excluded.
+- Images for Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026): source 2, referenced 0, in-place omission notices 2; both omissions are decorative coats of arms (cover and assent page), not normative law text, and the official site states no licence for reproducing the graphical emblems.
 
 ## What AI did and did not do
 
@@ -94,3 +106,4 @@ Model use at data-build time:
 - none
 - A model selected the Act and reviewed dates and scope; no model wrote legal text.
 - A model selected the Act and reviewed dates and scope; no model wrote legal text.
+- none

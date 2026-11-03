@@ -23,6 +23,13 @@
     "national-oversight-committee-on-financial-action-act-2025"
    ],
    "sha256": "7610b3f3285efd4eae00ce88d9bfa69317e5b26bf6bab2249870f5979e00db30"
+  },
+  "34-annual-acts-2026.json": {
+   "acts": [
+    "airport-administration-charge-amendment-act-2026",
+    "special-economic-zone-amendment-act-2026"
+   ],
+   "sha256": "b456459c74060f61c99a2ef636ce31b14cd4e9f6e227c521cb4ab61b51c004b3"
   }
  },
  "schema": 1

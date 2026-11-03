@@ -98,6 +98,34 @@
      "sha256": "be5adf9a8352ae556e30e414be744a0fa656ac22093cfc7b81670b0d8b18f22a"
     }
    ]
+  },
+  {
+   "slug": "airport-administration-charge-amendment-act-2026",
+   "short": "Airport Administration Charge (Amendment) Act, 2026",
+   "title": "The Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2026/10/No.-8-of-2026-The-Airport-Administration-Charge-Amendment-Act-2026.pdf",
+   "versions": [
+    {
+     "from": "2026-09-01",
+     "units": 1,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2026/10/No.-8-of-2026-The-Airport-Administration-Charge-Amendment-Act-2026.pdf",
+     "sha256": "f93aacbac706ea95341c4868e24e9e92a44dd1899bd1e3837883290a85bc6cd1"
+    }
+   ]
+  },
+  {
+   "slug": "special-economic-zone-amendment-act-2026",
+   "short": "Special Economic Zone (Amendment) Act, 2026",
+   "title": "Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026)",
+   "url": "https://laws.gov.ag/wp-content/uploads/2026/07/No.-1-of-2026-Special-Economic-Zone-2026.pdf",
+   "versions": [
+    {
+     "from": "2026-04-16",
+     "units": 1,
+     "source_url": "https://laws.gov.ag/wp-content/uploads/2026/07/No.-1-of-2026-Special-Economic-Zone-2026.pdf",
+     "sha256": "d97ae7cb355a65e8d04dc261705afcba2fb932b4756f5be017456ea1f570600d"
+    }
+   ]
   }
  ]
 }
