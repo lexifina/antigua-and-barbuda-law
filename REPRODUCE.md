@@ -60,7 +60,7 @@ When a law gives no date of its own, the default rule applies: An Antigua and Ba
 
 Not yet run for this build.
 
-A second build from the same corpus into an empty folder gave identical hashes for all 7 history commits and 9 tags (history tip `6220a633ddc8a80aac0c72dc669bf50cb3495444`).
+No second build of this corpus has been compared yet.
 
 ## Decisions made by hand
 

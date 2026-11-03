@@ -20,6 +20,6 @@ The law of Antigua and Barbuda (AG) as a git history: one file per provision, on
 
 **Why the Constitution is still not here.** The only consolidated Constitution (Cap. 23, Revised Edition 1992) on [laws.gov.ag](https://laws.gov.ag) is a scanned image with a 2006 OCR layer full of recognition errors, so it is left out; the OCR of the statutes above covers it only for those Acts. Schedule 3 comes from the 2025 Act, a born-digital PDF, and its commencement day (1 January 2026) from the Date of Commencement Order, 2026 (SI 2026 No. 1). The text this Schedule replaced is not available in a usable form, so the history starts at this version.
 
-**Source:** [Laws of Antigua and Barbuda](https://laws.gov.ag), official, retrieved 29 October to 3 November 2026. The two additional 2026 amendment Acts preserve their complete enacted bodies from the official born-digital Gazette PDFs. Each source PDF contains two decorative coats of arms and no normative images. See `LICENSE` and `REPRODUCE.md`.
+**Source:** [Laws of Antigua and Barbuda](https://laws.gov.ag), official, retrieved 29 October to 3 November 2026. The two additional 2026 amendment Acts preserve their statutory long titles and complete enacted bodies from the official born-digital Gazette PDFs. Each source PDF contains two decorative coats of arms and no normative images; the corpus has an in-place omission notice for each one. See `LICENSE` and `REPRODUCE.md`.
 
 Dates are the day the change took effect. This repository is not legal advice; for anything that matters, read the original.
