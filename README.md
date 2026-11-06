@@ -1,5 +1,7 @@
 # Antigua and Barbuda: law history in git
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Antigua and Barbuda's national law, which global-law reads at `antigua-and-barbuda/national/acts/`.
+
 The law of Antigua and Barbuda (AG) as a git history: one file per provision, one commit per law on the day it took effect, and the law that made the change as the commit author. It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law), which places it at `ag/`.
 
 **First build, deliberately small.** Language: English (the official language).
