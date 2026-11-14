@@ -1,27 +1,86 @@
 # Antigua and Barbuda: law history in git
 
+
+The law of Antigua and Barbuda as a git history: one file per section, one commit per version on the day it took effect, and the law that made each change as the commit's author. `git blame` names the law behind every line; `git log` lists every change to a section; picking a date gives the text in force that day.
+
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Antigua and Barbuda's national law, which global-law reads at `antigua-and-barbuda/national/acts/`.
 
-The law of Antigua and Barbuda (AG) as a git history: one file per provision, one commit per law on the day it took effect, and the law that made the change as the commit author. It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law), which places it at `ag/`.
+**What is in it now:** nine acts, each in one version, in force from 1 January 1992 to 1 September 2026: Schedule 3 of the Constitution (the oaths, as replaced by Act No. 22 of 2025); the Offences against the Person Act (Cap. 300) and the Companies Act, 1995, as OCR text of the official scans; the Evidence (Special Provisions) Act, 2009 and the Electronic Evidence Act, 2013; and four Acts of 2025 and 2026 (the National Oversight Committee on Financial Action Act, the Antigua and Barbuda Festivals Commission Act, the Special Economic Zone (Amendment) Act and the Airport Administration Charge (Amendment) Act). [`REPRODUCE.md`](REPRODUCE.md) lists every act with its versions and the decisions made for each.
 
-**First build, deliberately small.** Language: English (the official language).
+Each act has its own folder, with a `README.md` listing its provisions: Schedule 3 has one file per oath (`constitution-schedule-3/oath-office.md` is the Oath of Office), the four older acts one file per section (`electronic-evidence-act/sec-014.md` is section 14 of the Electronic Evidence Act; the two OCR acts name theirs `art-001.md` and so on), and the four Acts of 2025 and 2026 one file, `full-text.md`, with the whole enacted text.
 
-| Folder | Text | Versions | History |
-| --- | --- | ---: | --- |
-| `constitution-schedule-3/` | Constitution of Antigua and Barbuda, Schedule 3 (Oaths and Affirmations) | 1 | As replaced by the Constitution of Antigua and Barbuda (Amendment) Act, 2025 (No. 22 of 2025), in force 1 January 2026 |
-| `offences-against-the-person/` | Offences against the Person Act (Cap. 300) | 1 | **OCR text.** Revised Edition text as scanned; dated 1992-01-01 by the Revised Edition (the PDF states no date); later amendments are not applied |
-| `companies-act/` | Companies Act, 1995 (No. 18 of 1995) | 1 | **OCR text.** As enacted (assented 8 March 1996, published 28 March 1996); later amendments (2004, 2007, 2022, 2024) are not applied; sections 5, 175-177, 180, 296, 487, 528 and 548 have no number the OCR could read, so their text sits inside the section printed before them |
-| `evidence-special-provisions-act/` | The Evidence (Special Provisions) Act, 2009 (No. 5 of 2009) | 1 | As enacted, from the born-digital PDF (not OCR); dated by its Gazette of 19 February 2009, because it came into force on a day appointed by Notice that the source does not give; the amending Acts of 2016 and 2017 are not applied; there is no section 38 in the Act as printed |
-| `electronic-evidence-act/` | The Electronic Evidence Act, 2013 (No. 11 of 2013) | 1 | As enacted, from the born-digital PDF (not OCR); in force on publication in the Gazette, 7 November 2013 |
-| `antigua-and-barbuda-festivals-commission-act-2026/` | Antigua and Barbuda Festivals Commission Act, 2026 (No. 2 of 2026) | 1 | Complete enacted text in one file, including all 50 sections and the schedule; Official Gazette publication, 16 April 2026 |
-| `national-oversight-committee-on-financial-action-act-2025/` | National Oversight Committee on Financial Action Act, 2025 (No. 17 of 2025) | 1 | Complete enacted text in one file, including all 15 sections; Official Gazette publication, 30 October 2025 |
-| `airport-administration-charge-amendment-act-2026/` | Airport Administration Charge (Amendment) Act, 2026 (No. 8 of 2026) | 1 | Complete enacted text in one file, including all 5 sections; expressly in force 1 September 2026 |
-| `special-economic-zone-amendment-act-2026/` | Special Economic Zone (Amendment) Act, 2026 (No. 1 of 2026) | 1 | Complete enacted text in one file, including all 13 sections; Official Gazette publication, 16 April 2026 |
+The text is in English, the official language, as the official site prints it; part headings and the arrangement of sections are left out of the acts split by section.
 
-**OCR text.** The Offences against the Person Act and the Companies Act are scans with no usable text layer, so Lexifina ran Tesseract 5.4 (English) over the page images of laws.gov.ag and published that output. It has recognition errors (misread letters, run-together words, stray marks); it was spot-checked against the scan but not proofread, so for anything that matters read the original scan. Marginal notes, part headings and the arrangement of sections are left out. The two evidence Acts, the Festivals Commission Act and the National Oversight Committee on Financial Action Act are copied from PDF text layers. The latter two are single-file acts containing their enacted bodies, with running page headers left out. In the evidence Acts, a word split across a line with a hyphen is joined, and the 2009 Act's Schedule (a table) is kept line by line with its columns separated by " | ". Antigua and Barbuda has no penal, civil or commercial code; the Offences against the Person Act is the nearest penal statute included so far, and the Companies Act, 1995 is the commercial law. Some section numbers in the Companies Act were misread by the OCR; where exactly one line start fitted the running order the number was restored from the order, which is stated in the corpus notes.
+## Questions as git commands
 
-**Why the Constitution is still not here.** The only consolidated Constitution (Cap. 23, Revised Edition 1992) on [laws.gov.ag](https://laws.gov.ag) is a scanned image with a 2006 OCR layer full of recognition errors, so it is left out; the OCR of the statutes above covers it only for those Acts. Schedule 3 comes from the 2025 Act, a born-digital PDF, and its commencement day (1 January 2026) from the Date of Commencement Order, 2026 (SI 2026 No. 1). The text this Schedule replaced is not available in a usable form, so the history starts at this version.
+| Question | Command |
+| --- | --- |
+| Every change to the Oath of Office in Schedule 3 of the Constitution | `git log -p --word-diff -- constitution-schedule-3/oath-office.md` |
+| Which law wrote each line of the Oath of Office? | `git blame constitution-schedule-3/oath-office.md` |
+| Every version of Schedule 3, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- constitution-schedule-3 ':!*/README.md'` |
+| The Oath of Office as in force on 1 June 2026 | `python tools/on.py 2026-06-01 constitution-schedule-3 oath-office` |
 
-**Source:** [Laws of Antigua and Barbuda](https://laws.gov.ag), official, retrieved 29 October to 3 November 2026. The two additional 2026 amendment Acts preserve their statutory long titles and complete enacted bodies from the official born-digital Gazette PDFs. Each source PDF contains two decorative coats of arms and no normative images; the corpus has an in-place licence omission notice for each because the official site states no licence for reproducing the graphical emblems. See `LICENSE` and `REPRODUCE.md`.
+**Outside git**, we also host this record publicly, for free:
 
-Dates are the day the change took effect. This repository is not legal advice; for anything that matters, read the original.
+- **[Ask Claude about the law of Antigua and Barbuda](https://global-law.lexifina.com/v1/try_claude?country=antigua-and-barbuda)**: opens Claude with a first question ready.
+- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=antigua-and-barbuda)**: the same question in ChatGPT.
+- **[Call the API in your browser](https://global-law.lexifina.com/v1/search_law?query=electronic+record&jurisdictions=antigua-and-barbuda)**: a search of the law of Antigua and Barbuda for "electronic record", returned as JSON. See the [documentation here](https://lexifina.com/api/global-law).
+
+Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in English.
+
+**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+
+```sh
+git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
+python3 tools/countries.py add antigua-and-barbuda/national/acts
+python3 tools/law.py show 2026-01-01 antigua-and-barbuda/national/acts/constitution-schedule-3/oath-office.md
+```
+
+Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+
+## Dates
+
+Each commit is dated at noon, America/Antigua, on the day the version took effect, and carries it in its `In-force:` trailer:
+
+- an Act takes effect on its publication in the Gazette unless it names another day or leaves the day to a Minister's order or notice; the record uses the day the Act or its order gives (Schedule 3: 1 January 2026, by the Date of Commencement Order, SI 2026 No. 1; the Airport Administration Charge (Amendment) Act: 1 September 2026, by its section 1(2));
+- where the day is left to a Minister's notice that the source does not give, the Act is dated by its publication: the Evidence (Special Provisions) Act by the Gazette of 19 February 2009, the Companies Act by the publication date it prints, 28 March 1996;
+- the Offences against the Person Act is dated 1 January 1992 by the Revised Edition of the Laws, as its PDF states no date.
+
+Two versions are credited to the Act that made them (`Act No. 11 of 2013`, `Act No. 22 of 2025`). The other seven are the oldest version the site publishes as text and are credited to the publisher, `Government of Antigua and Barbuda (laws.gov.ag)`; each commit message says which publication it holds.
+
+## How it is checked
+
+- `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before and compares it with the corpus: 9 versions of 9 acts, 0 mismatches. The results are in [`REPRODUCE.md`](REPRODUCE.md).
+- Every commit's trailers parse, and main has no merge commits.
+- `tools/build.py` gives the same commit hashes from the same corpus, whose sha256 is in `data/corpus.sha256`; no second build has been compared yet.
+- History is append-only: `tools/append.py` adds new acts and versions on top and never rewrites a published commit.
+
+## What it does not show
+
+- **Most of the law.** Only these nine acts: no other statute, no subsidiary legislation and no case law.
+- **The Constitution as a whole.** Only Schedule 3 is here; the one consolidated Constitution online (Cap. 23, Revised Edition 1992) is a scan whose text layer is too garbled to use, and the Schedule 3 that the 2025 Act replaced is not available as text.
+- **Amendments.** Each act is in one version: Cap. 300 as printed in the 1992 Revised Edition (later amendments, such as the Offences against the Person (Amendment) Act, 2013, are not applied), the Companies Act as enacted (its amendments of 2004, 2007, 2022 and 2024 are not), and the Evidence (Special Provisions) Act without its amendments of 2016 and 2017.
+- **A proofread text of the two OCR acts.** The Offences against the Person Act and the Companies Act are Tesseract's reading of scans, spot-checked against the page images but not proofread, so they have misread letters and run-together words; in the Companies Act, sections 5, 175-177, 180, 296, 487, 528 and 548 sit inside the section before them. For anything that matters, read the scan.
+
+## Sources
+
+| Source | Kind | Past versions | Notes |
+| --- | --- | --- | --- |
+| [Laws of Antigua and Barbuda](https://laws.gov.ag) (Government of Antigua and Barbuda) | Official legislation site | no dated versions: Acts as enacted, and the 1992 Revised Edition, as PDF | Born-digital PDFs for the Acts of 2009 to 2026; scans with no usable text layer for Cap. 300 and the Companies Act, read here by OCR |
+
+## Licence
+
+See [`LICENSE`](LICENSE). The site states no licence for the legal text, and the Government of Antigua and Barbuda does not endorse this repository; Lexifina's own contributions (the arrangement of the history, the commit messages and the tools) are dedicated to the public domain under CC0 1.0.
+
+No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by an AI model, which also chose the sources and some of the acts and reviewed their dates and scope. The OCR is the unedited output of Tesseract 5.4, which is not a language model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## More
+
+From [lexifina/global-law](https://github.com/lexifina/global-law):
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
+- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
