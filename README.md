@@ -59,6 +59,7 @@ Two versions are credited to the Act that made them (`Act No. 11 of 2013`, `Act 
 - Every commit's trailers parse, and main has no merge commits.
 - `tools/build.py` gives the same commit hashes from the same corpus, whose sha256 is in `data/corpus.sha256`; no second build has been compared yet.
 - History is append-only: `tools/append.py` adds new acts and versions on top and never rewrites a published commit.
+- [vulnerabilities/](vulnerabilities/): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -78,6 +79,10 @@ Two versions are credited to the Act that made them (`Act No. 11 of 2013`, `Act 
 See [`LICENSE`](LICENSE). The site states no licence for the legal text, and the Government of Antigua and Barbuda does not endorse this repository; Lexifina's own contributions (the arrangement of the history, the commit messages and the tools) are dedicated to the public domain under CC0 1.0.
 
 No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by an AI model, which also chose the sources and some of the acts and reviewed their dates and scope. The OCR is the unedited output of Tesseract 5.4, which is not a language model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/): charts drawn from this repository. Not drawn yet.
 
 ## More
 
